@@ -1,0 +1,43 @@
+package MyPackage;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Lab2 {
+	static WebDriver driver;
+
+	public static void main(String[] args) {
+		WebDriverManager.edgedriver().setup();
+		EdgeOptions options = new EdgeOptions();
+		options.addArguments("--remote-allow-origins-");
+		driver = new EdgeDriver(options);
+		String BaseURL = "https://omayo.blogspot.in/";
+		driver.get(BaseURL);
+		WebElement Textbox1 = driver.findElement(By.id("ta1"));
+		Textbox1.sendKeys("Ahsan Hanif");
+		
+		WebElement Textbox2=driver.findElement(By.xpath("//*[@id=\"HTML11\"]/div[1]/textarea"));
+		Textbox2.getText();
+		String PText = Textbox2.getText();
+		System.out.println(PText);
+		Textbox2.clear();
+		Textbox2.sendKeys("I am an optimist.");
+		String Table = driver.findElement(By.xpath("//*[@id=\"table1\"]")).getText();
+		System.out.println(Table);
+		WebElement Username = driver.findElement(By.xpath("//*[@id=\"HTML31\"]/div[1]/form/input[1]"));
+		Username.sendKeys("ahsanhanif207@gmail.com");
+		WebElement Password = driver.findElement(By.xpath("//*[@id=\"HTML31\"]/div[1]/form/input[2]"));
+		Password.sendKeys("King1234*");
+		driver.findElement(By.xpath("//*[@id=\"HTML31\"]/div[1]/form/button")).click();
+		WebElement Frame =driver.findElement(By.id("iframe1"));
+		driver.switchTo().frame(Frame);
+		WebElement Frame2 =driver.findElement(By.id("iframe2"));
+		driver.switchTo().frame(Frame2);
+	}
+
+}
