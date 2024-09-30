@@ -1,0 +1,56 @@
+<MedicationDispensed>
+                <DrugDescription>PROGESTERONE 350MG ER</DrugDescription>
+                <Quantity>
+                    <Value>30</Value>
+                    <CodeListQualifier>38</CodeListQualifier>
+                    <QuantityUnitOfMeasure>
+                        <Code>C38046</Code>
+                    </QuantityUnitOfMeasure>
+                </Quantity>
+                <WrittenDate>
+                    <Date>2021-12-30</Date>
+                </WrittenDate>
+                <LastFillDate>
+                    <Date>2022-12-12</Date>
+                </LastFillDate>
+                <Substitutions>0</Substitutions>
+                <Sig>
+                    <SigText>TAKE 1 CAPSULE BY MOUTH AT BEDTIME.</SigText>
+                </Sig>
+                <PharmacyRequestedRefills>1</PharmacyRequestedRefills>
+                <CompoundInformation>
+                    <FinalCompoundPharmaceuticalDosageForm>C38046</FinalCompoundPharmaceuticalDosageForm>
+                    <CompoundIngredientsLotNotUsed>
+                        <CompoundIngredient>
+                            <CompoundIngredientItemDescription>PROGESTERONE POWDER</CompoundIngredientItemDescription>
+                            <ItemNumber>
+                                <Code>38779004305</Code>
+                                <Qualifier>ND</Qualifier>
+                            </ItemNumber>
+                        </CompoundIngredient>
+                        <Quantity>
+                            <Value>10.5</Value>
+                            <CodeListQualifier>38</CodeListQualifier>
+                            <QuantityUnitOfMeasure>
+                                <Code>C48155</Code>
+                            </QuantityUnitOfMeasure>
+                        </Quantity>
+                    </CompoundIngredientsLotNotUsed>
+                    <CompoundIngredientsLotNotUsed>
+                        <CompoundIngredient>
+                            <CompoundIngredientItemDescription>METHOCEL E4M</CompoundIngredientItemDescription>
+                            <ItemNumber>
+                                <Code>38779048308</Code>
+                                <Qualifier>ND</Qualifier>
+                            </ItemNumber>
+                        </CompoundIngredient>
+                        <Quantity>
+                            <Value>6.3697</Value>
+                            <CodeListQualifier>38</CodeListQualifier>
+                            <QuantityUnitOfMeasure>
+                                <Code>C48155</Code>
+                            </QuantityUnitOfMeasure>
+                        </Quantity>
+                    </CompoundIngredientsLotNotUsed>
+                </CompoundInformation>
+            </MedicationDispensed>
